@@ -1,14 +1,19 @@
-import axios from 'axios';
 import express from 'express';
-import { parseResponseData } from './parseData';
+import axios from 'axios';
 
 import secrets from './secrets.json';
+import { limiter } from './limiter';
+import { log } from './log';
+import { parseResponseData } from './parseData';
 import { HallNumber, RequestBody, ResponseData } from './types';
 
 const app = express();
+
 app.use(express.json());
+app.use(limiter);
 
 app.post('/', async (req, res) => {
+  log.info(req.ip);
   const body: RequestBody = req.body;
   const { room } = body;
   const hallNumber: HallNumber = secrets.hallNumber;
@@ -30,5 +35,5 @@ app.post('/', async (req, res) => {
 });
 
 app.listen(secrets.port, () =>
-  console.log(`Server listening on port ${secrets.port}`)
+  log.info(`Server listening on port ${secrets.port}`)
 );
