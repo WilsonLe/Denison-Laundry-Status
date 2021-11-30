@@ -8,7 +8,7 @@ import { HallNumber, RequestBody, ResponseData } from './types';
 const app = express();
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.post('/', async (req, res) => {
   const body: RequestBody = req.body;
   const { room } = body;
   const hallNumber: HallNumber = secrets.hallNumber;
