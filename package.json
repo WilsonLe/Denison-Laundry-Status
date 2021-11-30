@@ -1,7 +1,12 @@
 {
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc -w | nodemon dist/index.js"
+    "start": "tsc && node dist/index.js",
+    "dev": "twc -w | nodemon dist/index.js",
+    "encrypt": "env-cmd ./bin/encrypt.sh",
+    "decrypt": "env-cmd ./bin/decrypt.sh",
+    "build": "env-cmd ./bin/build.sh",
+    "start:container": "env-cmd ./bin/run.sh"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
@@ -14,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.1"
   },
   "license": "MIT"

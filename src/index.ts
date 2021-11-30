@@ -1,5 +1,6 @@
 import axios from 'axios';
 import express from 'express';
+import { parseResponseData } from './parseData';
 
 import secrets from './secrets.json';
 import { HallNumber, RequestBody, ResponseData } from './types';
@@ -19,8 +20,8 @@ app.get('/', async (req, res) => {
       'Alliancels-Auth-Token': secrets.authToken,
     };
     const { data } = await axios.get(endpoint, { headers });
-    // manipulate MachineStatus data to make it more readable
-    res.json({ machineStatus: data } as ResponseData);
+    const resData = parseResponseData(data);
+    res.json(resData);
   } else {
     res.json({
       error: 'Invalid room name',

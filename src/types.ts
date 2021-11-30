@@ -3,8 +3,31 @@ export type RequestBody = {
 };
 
 export type ResponseData = {
-  error: string | undefined;
-  machineStatus: MachineStatus[] | undefined;
+  error?: string;
+  machineStatus?: {
+    dryers: ParsedMachineStatus[];
+    washers: ParsedMachineStatus[];
+    availableDryers: number;
+    completeDryers: number;
+    inUsedDryers: number;
+    errorDryers: number;
+    availableWasher: number;
+    completeWashers: number;
+    inUsedWashers: number;
+    errorWashers: number;
+    messages: string;
+  };
+};
+
+export type ParsedMachineStatus = {
+  type: 'washer' | 'dryer' | undefined;
+  remainingSeconds: number;
+  status:
+    | 'IN USED'
+    | 'COMPLETE'
+    | 'AVAILABLE'
+    | 'READY TO START'
+    | 'NETWORK ERROR';
 };
 
 export type HallNumber = {
