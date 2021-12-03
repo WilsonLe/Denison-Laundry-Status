@@ -1,7 +1,5 @@
 # Denison Washroom Status API
 
-NOTE: Accessible for Denison internal network only
-
 ## Table of Content:
 
 - [Endpoint URI](#endpoint)
@@ -11,7 +9,7 @@ NOTE: Accessible for Denison internal network only
 
 ## Endpoint
 
-- POST wilsonle.ddns.net:7345
+- POST http://us.wilsonle.me:7345
 
 ## Sample Request Body
 
@@ -125,8 +123,8 @@ Possible hall names:
 
 ## Siri Shortcut
 
-- https://www.icloud.com/shortcuts/57f1260784be46deb08f06741961e914
-- Link to the Siri shortcut that calls this API.
+- Link to the Siri shortcut that calls this API:
+- https://www.icloud.com/shortcuts/b3d90f8b77db48faaab62665767eb889
 - This will allow you to ask Siri to speak the "messages" key of the response body whenever you say "washroom status"
 - You can customize the summon command (default by "washroom status") to whatever you like by editing the shortcut yourself.
 - You can edit the hall you want to know the status of (usually the hall you are living in). By default it's Curtis Hall because I live there 😁
