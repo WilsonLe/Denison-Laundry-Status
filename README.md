@@ -1,4 +1,4 @@
-# Denison Washroom Status API
+# Denison Laundry Status API
 
 ## Table of Content:
 
