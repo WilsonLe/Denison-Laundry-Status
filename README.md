@@ -125,8 +125,8 @@ Possible hall names:
 
 - Link to the Siri shortcut that calls this API:
 - https://www.icloud.com/shortcuts/a33cb27280894c26a00a3c7814000c6c
-- This will allow you to ask Siri to speak the "messages" key of the response body whenever you say "washroom status"
-- You can customize the summon command (default by "washroom status") to whatever you like by editing the shortcut yourself.
+- This will allow you to ask Siri to speak the "messages" key of the response body whenever you say "laundry status"
+- You can customize the summon command (default by "laundry status") to whatever you like by editing the shortcut yourself.
 - You can edit the hall you want to know the status of (usually the hall you are living in). By default it's Curtis Hall because I live there 😁
 
 ![How to change the hall you want to get status of](static/screenshot.jpeg)
