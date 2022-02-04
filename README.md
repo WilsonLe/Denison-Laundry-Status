@@ -51,13 +51,12 @@ Possible hall names:
 - Good Hall
 - Sunset House
 - Taylor House
-- Wright Apartments;
+- Wright Apartments
 
 ## Sample Response Body
 
 ```
-
-	{
+{
     "machineStatus": {
         "dryers": [
             {
