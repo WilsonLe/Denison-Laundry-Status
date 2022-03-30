@@ -1,5 +1,9 @@
 # Denison Laundry Status API
 
+## IMPORTANT:
+
+project is under maintenance, please try again when this line is removed. I am kinda busy with college lately xD
+
 ## Table of Content:
 
 - [Endpoint URI](#endpoint)
