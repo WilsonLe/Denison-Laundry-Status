@@ -2,7 +2,8 @@
 
 ## IMPORTANT:
 
-project is under maintenance, please try again when this line is removed. I am kinda busy with college lately xD
+~~project is under maintenance, please try again when this line is removed. I am kinda busy with college lately xD~~
+It turns out the API host expires my auth token. All I need to do is setup the interceptor to extract the auth token and update project secrets. Now it should work normally.
 
 ## Table of Content:
 
@@ -127,7 +128,7 @@ Possible hall names:
 ## Siri Shortcut
 
 - Link to the Siri shortcut that calls this API:
-- https://www.icloud.com/shortcuts/e8c1e184ac5e40c5af9f71c9a5df3f56
+- https://www.icloud.com/shortcuts/44d1ee9e73de4da4b275ca87ba9558f2
 - This will allow you to ask Siri to speak the "messages" key of the response body whenever you say "laundry status"
 - You can customize the summon command (default by "laundry status") to whatever you like by editing the shortcut yourself.
 - You can edit the hall you want to know the status of (usually the hall you are living in). By default it's Curtis Hall because I live there 😁
