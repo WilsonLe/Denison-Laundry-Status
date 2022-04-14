@@ -3,6 +3,7 @@
 ## Dev Note:
 
 ~~project is under maintenance, please try again when this line is removed. I am kinda busy with college lately xD~~
+
 It turns out the API host expires my auth token. All I need to do is setup the interceptor to extract the auth token and update project secrets. Now it should work normally.
 
 ## Table of Content:
